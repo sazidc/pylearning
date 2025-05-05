@@ -1,3 +1,5 @@
+# Step-3 Making a loop for declaring the winnner
+
 word_list = ['accomplishment', 'authorization', 'cancellation', 'conversation', 'declaration', 'imagination', 'invitation', 'realization', 'recommendation', 'termination']
 
 import random
