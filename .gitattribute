@@ -1,0 +1,10 @@
+# Ensure all text files use automatic normalization (LF in the repository, CRLF on checkout for Windows)
+* text=auto
+
+# Force specific Windows script files to always use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+
+# Force Unix shell scripts to use LF line endings
+*.sh text eol=lf
