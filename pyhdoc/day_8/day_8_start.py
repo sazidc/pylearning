@@ -12,14 +12,10 @@
     
 # greet_with_input("Princess")
 
-# def greet_with(name, location):
-#     print(f"Hello {name}")
-#     print(f"What is it like in {location}?")
-    
-# greet_with("Princess Leia", "London")
-
 def greet_with(name, location):
-    print(f"Hello {name}")
+    print(f"Hello, {name}.")
     print(f"What is it like in {location}?")
     
+# greet_with("Princess Leia", "London")
+   
 greet_with(name = "Princess Leia", location ="London")
