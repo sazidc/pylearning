@@ -25,7 +25,12 @@ def game():
     print("I'm thinking of a number between 1 and 100.")
 
     while attempts > 0:
-        guess = int(input("Make a guess: "))
+        try:
+            guess = int(input("Make a guess: "))
+        except ValueError:
+            print("Please enter a valid number.")
+            continue  # Skip the rest of the loop and ask for input again
+        
         if guess == number:
             print(f"You got it! The answer was {number}.")
             break
