@@ -47,6 +47,7 @@ def play_game():
         user_guess = input("Who has more followers? Type 'A' or 'B': ").lower()
         
         clear()
+        print(logo)
         
         correct_answer = compare_follower_count(celebrity_A_follower_count, celebrity_B_follower_count)
         
