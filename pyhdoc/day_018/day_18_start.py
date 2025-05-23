@@ -1,15 +1,12 @@
 # Using turtle module to make a square
 
-import turtle as timmy_the_turtle
+from turtle import Turtle
 
-timmy_the_turtle.color("coral")
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
-timmy_the_turtle.forward(100)
-timmy_the_turtle.right(90)
+tim = Turtle()
 
-timmy_the_turtle.exitonclick()
+tim.color("coral")
+for _ in range(4):
+    tim.forward(100)
+    tim.right(90)
+
+tim.exitonclick()
