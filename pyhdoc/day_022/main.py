@@ -28,12 +28,23 @@ while game_is_on:
     ball.move()
 
     # Detect collision with wall
-    if ball.ycor() > 280 or ball.ycor() < -280:
+    if ball.ycor() > 280 or ball.ycor() < -277:
         ball.bounce_y()
 
     # Detect collision with paddles
     if ball.distance(r_paddle) < 50 and ball.xcor() > 320 or ball.distance(l_paddle) < 50 and ball.xcor() < -330:
         ball.bounce_x()
 
+    # Detect R paddle misses
+    if ball.xcor() > 380:
+        ball.reset_position()
+        l_paddle.reset_paddle()
+        r_paddle.reset_paddle()
+
+    # Detect L paddle misses
+    if ball.xcor() < -380:
+        ball.reset_position()
+        r_paddle.reset_paddle()
+        l_paddle.reset_paddle()
 
 screen.exitonclick()

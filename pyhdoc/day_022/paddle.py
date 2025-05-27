@@ -11,6 +11,7 @@ class Paddle(Turtle):
         self.shapesize(stretch_wid=5, stretch_len=1)
         self.penup()
         self.goto(position)
+        self.initial_position = position
 
     def go_up(self):
         new_y = self.ycor() + 20
@@ -20,8 +21,5 @@ class Paddle(Turtle):
         new_y = self.ycor() - 20
         self.goto(self.xcor(), new_y)
 
-    def stop(self):
-        self.goto(self.xcor(), self.ycor())
-
-    def reset(self):
-        self.goto(0, 0)
+    def reset_paddle(self):
+        self.goto(self.initial_position)
