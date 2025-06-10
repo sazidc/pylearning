@@ -2,9 +2,34 @@
 
 import tkinter as tk
 from tkinter import messagebox
+from random import randint, choice, shuffle
+import pyperclip
 
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
+def generate_password():
+    """Generates a random password"""
+    letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    symbols = ['!', '#', '$', '%', '&', '(', ')', '*', '+']
+
+    nr_letters = randint(8, 10)
+    nr_symbols = randint(2, 4)
+    nr_numbers = randint(2, 4)
+
+    password_list = (
+        [choice(letters) for _ in range(nr_letters)] +
+        [choice(symbols) for _ in range(nr_symbols)] +
+        [choice(numbers) for _ in range(nr_numbers)]
+    )
+
+    shuffle(password_list)
+
+    password = "".join(password_list)
+    password_entry.insert(0, password)
+
+    pyperclip.copy(password)
+    
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def save():
@@ -59,7 +84,7 @@ password_entry = tk.Entry(width=25)
 password_entry.grid(column=1, row=3, sticky="ew", padx=(5, 0), pady=5)
 
 # Buttons
-generate_password_button = tk.Button(text="Generate Password")
+generate_password_button = tk.Button(text="Generate Password", command=generate_password)
 generate_password_button.grid(column=2, row=3, sticky="ew", padx=(5, 10), pady=5)
 
 add_button = tk.Button(text="Add", width=36, command=save)
