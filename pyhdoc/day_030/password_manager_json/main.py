@@ -52,15 +52,36 @@ def save():
     is_ok = messagebox.askokcancel(title=website, message=f"These are the details entered: \nEmail: {email} \nPassword: {password} \nIs it ok to save?")
    
     if is_ok:
-        with open("data.json", "r") as data_file:
-            data = json.load(data_file)
+        try:
+            with open("data.json", "r") as data_file:
+                data = json.load(data_file)
+        except FileNotFoundError:
+            with open("data.json", "w") as data_file:
+                json.dump(new_data, data_file, indent=4)
+        else:
             data.update(new_data)
-
-        with open("data.json", "w") as data_file:
-            json.dump(data, data_file, indent=4)
-
+            with open("data.json", "w") as data_file:
+                json.dump(data, data_file, indent=4)
+        finally:
             website_entry.delete(0, tk.END)
             password_entry.delete(0, tk.END)
+
+# ---------------------------- FIND PASSWORD ------------------------------- #
+
+def find_password():
+    website = website_entry.get()
+    try:
+        with open("data.json", "r") as data_file:
+            data = json.load(data_file)
+    except FileNotFoundError:
+        messagebox.showinfo(title="Error", message="No data file found.")
+    else:
+        if website in data:
+            email = data[website]["email"]
+            password = data[website]["password"]
+            messagebox.showinfo(title=website, message=f"Email: {email}\nPassword: {password}")
+        else:
+            messagebox.showinfo(title="Error", message=f"No details for {website} exists.")
 
 # ---------------------------- UI SETUP ------------------------------- #
 
@@ -84,8 +105,8 @@ password_label = tk.Label(text="Password:")
 password_label.grid(column=0, row=3, sticky="w", padx=5, pady=5)
 
 # Entries
-website_entry = tk.Entry(width=43)
-website_entry.grid(column=1, row=1, columnspan=2, sticky="ew", padx=5, pady=5)
+website_entry = tk.Entry(width=33)
+website_entry.grid(column=1, row=1, sticky="ew", padx=5, pady=5)
 website_entry.focus()
 
 email_entry = tk.Entry(width=43)
@@ -96,6 +117,9 @@ password_entry = tk.Entry(width=25)
 password_entry.grid(column=1, row=3, sticky="ew", padx=(5, 0), pady=5)
 
 # Buttons
+search_button = tk.Button(text="Search", width=10, command=find_password)
+search_button.grid(column=2, row=1, sticky="ew", padx=(5, 10), pady=5)
+
 generate_password_button = tk.Button(text="Generate Password", command=generate_password)
 generate_password_button.grid(column=2, row=3, sticky="ew", padx=(5, 10), pady=5)
 
