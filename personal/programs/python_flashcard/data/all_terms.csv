@@ -1,0 +1,99 @@
+Category,Term,Definition,Repetition,Interval,EaseFactor,NextReview
+concept,Function,"A reusable block of code defined with 'def'.",0,1,2.5,2025-06-13
+module,os,"Provides a way of using operating system-dependent functionality.",0,1,2.5,2025-06-13
+concept,List,"An ordered, mutable collection of elements.",0,1,2.5,2025-06-13
+concept,Decorator,"A function that modifies the behavior of another function.",0,1,2.5,2025-06-13
+practical,open(),"Built-in function to open a file.",0,1,2.5,2025-06-13
+concept,Dictionary,"An unordered collection of key-value pairs.",0,1,2.5,2025-06-13
+module,datetime,"Module for manipulating dates and times.",0,1,2.5,2025-06-13
+concept,Lambda,"An anonymous function defined with the lambda keyword.",0,1,2.5,2025-06-13
+concept,Set,"An unordered collection of unique items.",0,1,2.5,2025-06-13
+module,json,"Module for parsing and creating JSON data.",0,1,2.5,2025-06-13
+practical,len(),"Returns the length (number of items) of an object.",0,1,2.5,2025-06-13
+practical,print(),"Outputs data to the console or other standard output.",0,1,2.5,2025-06-13
+practical,range(),"Generates a sequence of numbers, commonly used in loops.",0,1,2.5,2025-06-13
+practical,input(),"Reads a line of text from user input.",0,1,2.5,2025-06-13
+practical,open(),"Opens a file and returns a file object.",0,1,2.5,2025-06-13
+practical,map(),"Applies a function to all items in an iterable and returns an iterator.",0,1,2.5,2025-06-13
+practical,filter(),"Filters items in an iterable based on a function that returns True or False.",0,1,2.5,2025-06-13
+practical,lambda,"An anonymous function expressed as a single expression.",0,1,2.5,2025-06-13
+practical,def,"Keyword used to define a function.",0,1,2.5,2025-06-13
+practical,return,"Exits a function and optionally passes back a value.",0,1,2.5,2025-06-13
+practical,try-except,"Blocks used to handle exceptions and prevent program crashes.",0,1,2.5,2025-06-13
+practical,with,"Context manager syntax to manage resources like files safely.",0,1,2.5,2025-06-13
+practical,import,"Keyword to include external modules or libraries.",0,1,2.5,2025-06-13
+practical,list.append(),"Method to add an item to the end of a list.",0,1,2.5,2025-06-13
+practical,dict.get(),"Method to safely retrieve a value from a dictionary by key.",0,1,2.5,2025-06-13
+practical,sorted(),"Returns a new sorted list from the items in an iterable.",0,1,2.5,2025-06-13
+practical,enumerate(),"Adds a counter to an iterable and returns it as an enumerate object.",0,1,2.5,2025-06-13
+practical,zip(),"Combines multiple iterables into tuples.",0,1,2.5,2025-06-13
+concept,Algorithm,"A step-by-step procedure for solving a problem.",0,1,2.5,2025-06-13
+concept,Variable,"A named location to store data in memory.",0,1,2.5,2025-06-13
+concept,Class,"A blueprint for creating objects with attributes and methods.",0,1,2.5,2025-06-13
+concept,Object,"An instance of a class.",0,1,2.5,2025-06-13
+concept,Inheritance,"Mechanism where a class derives properties and behavior from another class.",0,1,2.5,2025-06-13
+concept,Recursion,"A function calling itself to solve smaller instances of a problem.",0,1,2.5,2025-06-13
+concept,Mutable,"An object whose state or contents can be changed.",0,1,2.5,2025-06-13
+concept,Immutable,"An object whose state cannot be changed after creation.",0,1,2.5,2025-06-13
+concept,Boolean,"A data type with two values: True or False.",0,1,2.5,2025-06-13
+concept,Tuple,"An immutable ordered collection of items.",0,1,2.5,2025-06-13
+concept,Set,"An unordered collection of unique items.",0,1,2.5,2025-06-13
+module,os,"Provides functions to interact with the operating system.",0,1,2.5,2025-06-13
+module,sys,"Provides access to system-specific parameters and functions.",0,1,2.5,2025-06-13
+module,math,"Provides mathematical functions like sqrt(), sin(), cos(), etc.",0,1,2.5,2025-06-13
+module,datetime,"Used for manipulating dates and times.",0,1,2.5,2025-06-13
+module,json,"Used for parsing and creating JSON data.",0,1,2.5,2025-06-13
+module,re,"Provides regular expression matching operations.",0,1,2.5,2025-06-13
+module,numpy,"A fundamental package for numerical computations and array operations.",0,1,2.5,2025-06-13
+module,pandas,"Provides data structures and data analysis tools for tabular data.",0,1,2.5,2025-06-13
+module,matplotlib,"A plotting library for creating static, animated, and interactive visualizations.",0,1,2.5,2025-06-13
+module,seaborn,"Statistical data visualization library built on matplotlib.",0,1,2.5,2025-06-13
+module,scikit-learn,"A machine learning library that provides simple and efficient tools for data mining and analysis.",0,1,2.5,2025-06-13
+module,tensorflow,"An end-to-end open source platform for machine learning.",0,1,2.5,2025-06-13
+module,keras,"A high-level neural networks API, running on top of TensorFlow.",0,1,2.5,2025-06-13
+concept,Array,"A collection of items stored at contiguous memory locations.",0,1,2.5,2025-06-13
+concept,DataFrame,"A 2-dimensional labeled data structure with columns of potentially different types.",0,1,2.5,2025-06-13
+concept,Overfitting,"When a model learns noise in the training data instead of the underlying pattern.",0,1,2.5,2025-06-13
+concept,Underfitting,"When a model is too simple to capture the underlying pattern of the data.",0,1,2.5,2025-06-13
+concept,Gradient Descent,"An optimization algorithm to minimize the loss function by iteratively moving in the direction of steepest descent.",0,1,2.5,2025-06-13
+concept,Epoch,"One complete pass through the entire training dataset during model training.",0,1,2.5,2025-06-13
+concept,Activation Function,"A function applied to a neuron’s output to introduce non-linearity.",0,1,2.5,2025-06-13
+concept,Loss Function,"A function that measures the difference between predicted and actual values.",0,1,2.5,2025-06-13
+concept,Regularization,"Techniques to reduce overfitting by adding a penalty to the loss function.",0,1,2.5,2025-06-13
+concept,Cross Validation,"A technique for assessing how a model generalizes to an independent dataset.",0,1,2.5,2025-06-13
+concept,Precision,"The ratio of true positives to the sum of true and false positives.",0,1,2.5,2025-06-13
+concept,Recall,"The ratio of true positives to the sum of true positives and false negatives.",0,1,2.5,2025-06-13
+concept,F1 Score,"The harmonic mean of precision and recall.",0,1,2.5,2025-06-13
+concept,Confusion Matrix,"A table used to describe the performance of a classification model.",0,1,2.5,2025-06-13
+concept,Neural Network,"A set of algorithms modeled loosely after the human brain that are designed to recognize patterns.",0,1,2.5,2025-06-13
+concept,Backpropagation,"An algorithm for training neural networks by propagating the error backward.",0,1,2.5,2025-06-13
+concept,Feature Engineering,"The process of using domain knowledge to create features that make machine learning algorithms work better.",0,1,2.5,2025-06-13
+concept,Hyperparameter,"Parameters whose values are set before the learning process begins.",0,1,2.5,2025-06-13
+concept,Dimensionality Reduction,"Techniques to reduce the number of input variables in a dataset.",0,1,2.5,2025-06-13
+concept,Pandas Series,"A one-dimensional labeled array capable of holding any data type.",0,1,2.5,2025-06-13
+concept,Iterator,"An object representing a stream of data; returns one element at a time when iterated over.",0,1,2.5,2025-06-13
+concept,Generator,"A function that returns an iterator and generates values on the fly using the yield keyword.",0,1,2.5,2025-06-13
+concept,Context Manager,"An object that defines runtime context to be entered and exited using with statement.",0,1,2.5,2025-06-13
+concept,Decorator,"A function that modifies the behavior of another function without changing its source code.",0,1,2.5,2025-06-13
+module,scipy,"Scientific computing library for mathematics, science, and engineering.",0,1,2.5,2025-06-13
+module,pytorch,"An open source machine learning framework based on the Torch library.",0,1,2.5,2025-06-13
+module,xgboost,"An optimized distributed gradient boosting library.",0,1,2.5,2025-06-13
+module,flask,"A lightweight web application framework.",0,1,2.5,2025-06-13
+module,django,"A high-level Python web framework for rapid development.",0,1,2.5,2025-06-13
+module,sqlalchemy,"SQL toolkit and Object Relational Mapper for Python.",0,1,2.5,2025-06-13
+concept,Convolutional Neural Network,"A class of deep neural networks, most commonly applied to analyzing visual imagery.",0,1,2.5,2025-06-13
+concept,Reinforcement Learning,"An area of machine learning concerned with how agents ought to take actions in an environment.",0,1,2.5,2025-06-13
+concept,Transformer,"A deep learning model architecture based on attention mechanisms.",0,1,2.5,2025-06-13
+concept,Attention Mechanism,"A technique that allows models to focus on relevant parts of the input.",0,1,2.5,2025-06-13
+concept,Generative Adversarial Network (GAN),"A class of machine learning frameworks where two neural networks contest with each other.",0,1,2.5,2025-06-13
+concept,Design Pattern,"Reusable solutions to common software design problems.",0,1,2.5,2025-06-13
+concept,Big O Notation,"A notation to describe the performance or complexity of an algorithm.",0,1,2.5,2025-06-13
+concept,Hash Table,"A data structure that implements an associative array abstract data type.",0,1,2.5,2025-06-13
+concept,Linked List,"A linear collection of data elements whose order is not given by their physical placement in memory.",0,1,2.5,2025-06-13
+concept,Binary Tree,"A tree data structure in which each node has at most two children.",0,1,2.5,2025-06-13
+concept,Sorting Algorithm,"Algorithms to arrange elements in a list in a certain order.",0,1,2.5,2025-06-13
+concept,Dynamic Programming,"A method for solving complex problems by breaking them down into simpler subproblems.",0,1,2.5,2025-06-13
+concept,API,"Application Programming Interface, a set of routines and tools for building software applications.",0,1,2.5,2025-06-13
+concept,REST,"Representational State Transfer, an architectural style for designing networked applications.",0,1,2.5,2025-06-13
+concept,JSON,"JavaScript Object Notation, a lightweight data interchange format.",0,1,2.5,2025-06-13
+concept,Serialization,"The process of converting an object into a format that can be stored or transmitted.",0,1,2.5,2025-06-13
